@@ -1,0 +1,115 @@
+html {
+	height: 100%;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(/assets/fonts/SourceSansPro-ExtraLight.otf);
+    font-weight: 200
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(../fonts/SourceSansPro-Light.otf);
+    font-weight: 300
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(../fonts/SourceSansPro-Regular.otf);
+    font-weight: 400
+}
+
+body {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 1.334em;
+    line-height: 2rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    text-rendering: optimizeLegibility !important;
+    overflow-x: hidden
+    position: absolute;
+}
+
+/** Navigation **/
+nav {
+  font-size: 16px;
+  font-weight: 350;
+  color: #5c5974;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+nav a {
+  color: #5c5974;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 35px;
+}
+
+.navbar {min-height:35px !important;}
+
+/** Header **/
+.header {
+	height: 110vh;
+  font-size: 20px;
+  font-weight: 100;
+	background: url('../assets/bg.jpg') no-repeat center center fixed;
+  color: #fff;
+  background-size: cover;
+  position: relative;
+}
+
+.header h1 {
+  font-weight: 200;
+  font-size: 52px;
+  line-height: 63px;
+  color: #fff;
+
+}
+
+.header .submit {
+    width: 100%;
+}
+
+.header .container-fluid {
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .header .content {
+    margin-top: -120px;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type=text] {
+    margin-bottom: 10px;
+  }
+}
+
+.vertical-container {
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
